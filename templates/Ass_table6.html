@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .abc
+        {
+            border-collapse: collapse;
+            background:linear-gradient(45deg,red,black,blue);
+            color: white;
+            width: 50%;
+        }
+        .a{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="2px"class="abc" cellpadding="15px">
+            <caption style="color: black;">Km custom html from example using AppleScript</caption>
+            <tr>
+                <td><label>Name : </label></td>
+                <td><input type="text" class="a"></td>
+            </tr>
+            <tr>
+                <td><label>Email : </label></td>
+                <td><input type="email" class="a"></td>
+            </tr>
+            <tr>
+                <td><label>Password : </label></td>
+                <td><input type="password" class="a"></td>
+            </tr>
+            <tr>
+                <td><label>Approval requierd</label></td>
+                <td><input type="checkbox">Do you approve ?</td>
+            </tr>
+            <tr>
+                <td><label>Pick your favorite :</label></td>
+                <td>
+                    <input type="radio" name="A1">Choose A</input><br>
+                    <input type="radio" name="A1">Choose B</input><br>
+                    <input type="radio" name="A1">Choose C</input><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label >Popup Menu : </label></td>
+                <td>
+                    <select>
+                        <option value="texts">texas</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                        <option value="6">5</option>
+                        <option value="7">6</option>
+                        <option value="8">7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Field ignored by km</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label>Text area</label></td>
+                <td>
+                    <textarea cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+                
+            </tr>
+        </table>
+    </center>
+    <center>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTAg</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+</body>
+</html>

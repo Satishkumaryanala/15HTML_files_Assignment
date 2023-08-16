@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS_Animations Ball</title>
+    <style>
+        div
+        {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: cyan;
+        }
+        div>span
+        {
+            background: linear-gradient(45deg,blue,rgb(227, 208, 208),black);
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: absolute;
+
+            animation: Ball 5s linear 0s 5 alternate;
+        }
+        @keyframes Ball
+        {
+            0%
+            {
+                top: 0px;
+                left: 0px;
+            }
+            10%
+            {
+                top: 400px;
+                left: 150px;
+            }
+            20%
+            {
+                top: 0px;
+                left: 300px;
+            }
+            30%
+            {
+                top: 400px;
+                left: 450px;
+            }
+            40%
+            {
+                top: 0px;
+                left: 600px;
+            }
+            50%
+            {
+                top: 400px;
+                left: 750px;
+            }
+            60%
+            {
+                top: 0px;
+                left: 900px;
+            }
+            70%
+            {
+                top: 400px;
+                left: 1050px;
+            }
+            80%
+            {
+                top: 0px;
+                left: 1200px;
+            }
+            90%
+            {
+                top: 400px;
+                left: 1350px;
+            }
+            100%
+            {
+                top: 0px;
+                left: 1500px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+    <center>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation2</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+</body>
+</html>

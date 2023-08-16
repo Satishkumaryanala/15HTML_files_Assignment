@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS_Animations Bars</title>
+    <style>
+        .parent
+        {
+            position: relative;
+            top: 150px;
+            left: 480px;
+            width: 410px;
+            height: 300px;
+            box-shadow: 0 0 10px green;
+        }
+        .parent>div
+        {
+            display: inline-block;
+            width: 2px;
+            height: 100px;
+            margin: 100px 20px;
+            background-color: black;
+
+            animation: Bars 1s linear 0s infinite normal;
+        }
+        .parent>div:first-child
+        {
+            animation-delay: 0s;
+        }
+        .parent>div:nth-child(2)
+        {
+            animation-delay: 0.5s;
+        }
+        .parent>div:nth-child(3)
+        {
+            animation-delay: 0s;
+        }
+        .parent>div:nth-child(4)
+        {
+            animation-delay: 0.5s;
+        }
+        .parent>div:nth-child(5)
+        {
+            animation-delay: 0s;
+        }
+        .parent>div:nth-child(6)
+        {
+            animation-delay: 0.5s;
+        }
+        .parent>div:nth-child(7)
+        {
+            animation-delay: 0s;
+        }
+        .parent>div:nth-child(8)
+        {
+            animation-delay: 0.5s;
+        }
+        .parent>div:last-child
+        {
+            animation-delay: 0s;
+        }
+
+        @keyframes Bars
+        {
+            0%,100%
+            {
+                transform: scale(0.5, 0.5);
+            }
+            50%
+            {
+                transform: scale(1, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div></div>
+    <!-- links -->
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+</body>
+</html>

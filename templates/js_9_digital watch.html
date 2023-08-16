@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        #bkg
+        {
+            background: lightgrey url("{% static 'images/Nature.jpg' %}") no-repeat fixed;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-5 m-auto">
+                    <div class="card">
+                        <div class="card-header bg-primary">
+                            <h3 class="text-light text-center">Digital time watch</h3>
+                        </div>
+                        <div class="card-body text-center text-white" id="bkg">
+                            <h2>Asia/Kolkata</h2>
+                            <h3 id="time">Time</h3>
+                            <p id="date">Date</p>
+                            <button class="btn btn-md btn-outline-blue" id="stop">Stop button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <center>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation2</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+
+    <!-- scrpit code -->
+    <script>
+        let timeTag=document.querySelector('#time');
+        let DateTag=document.querySelector('#date');
+        let sbtn=document.querySelector('#stop');
+
+        function timer()
+        {
+            let opt={timzone:'Asia/Kolkata'};
+            let Curtime=new Date().toLocaleTimeString(opt,'en-us');
+            let Curdate=new Date().toLocaleDateString(opt,'en-us');
+
+            timeTag.innerText=Curtime;
+            DateTag.innerText=Curdate;
+        }
+        // timer()
+        let Stopkey=setInterval(timer,1000)
+        sbtn.addEventListener('click',()=>
+        {
+            clearInterval(Stopkey)
+        })
+    </script>
+</body>
+</html>

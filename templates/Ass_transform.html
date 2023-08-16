@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS transform</title>
+    <style>
+        .parent
+        {
+            box-shadow: -5px 8px 15px black;
+            background: linear-gradient(45deg, blue, black ,red );
+            margin: 100px auto;
+            height: 450px;
+            width: 400px;
+            position: relative;
+        }
+        #box1,#box2,#box3,#box4
+        {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        #box1
+        {
+            box-shadow: 0 0 10px blue;
+            background: red;
+            transition: all 1s linear 0s;
+            
+        }
+        #box2
+        {
+            box-shadow: 0 0 10px rgb(77, 30, 52);
+            background: whitesmoke;
+            transition: all 1s linear 1s;
+            text-align: right;
+            
+        }
+        #box3
+        {
+            box-shadow: 0 0 10px rgb(76, 185, 49);
+            background: blue;
+            transition: all 1s linear 2s;
+            text-align: end;
+            
+        }
+        #box4
+        {
+            box-shadow: 0 0 10px rgb(100, 76, 33);
+            background: grey;
+            transition: all 1s linear 3s;
+            text-align: left;
+            
+        }
+        .parent:hover
+        {
+            cursor: pointer;
+        }
+        .parent:hover>#box1
+        {
+            transform: translateY(-100px);
+        }
+        .parent:hover>#box2
+        {
+            transform: translateX(100px);
+        }
+        .parent:hover>#box3
+        {
+            transform: translateY(100px);
+        }
+        .parent:hover>#box4
+        {
+            transform: translateX(-100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="box1">Box1</div>
+        <div id="box2">Box2</div>
+        <div id="box3">Box3</div>
+        <div id="box4">Box4</div>
+    </div>
+    <center>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTAg</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation1</a></h3>
+    </center>
+</body>
+</html>

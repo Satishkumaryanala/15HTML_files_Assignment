@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Table 2</title>
+</head>
+<body>
+	<center>
+		<table border="2px" cellpadding="10px" cellspacing="5px">
+			<caption>Time table</caption>
+			<thead>
+				<tr>
+					<th>Day period</th>
+					<th>I <br>(9:30-10:20)</th>
+					<th>II <br>(10:20-11:10)</th>
+					<th>III <br>(11:10-12:00)</th>
+					<th>(12:00-12:40)</th>
+					<th>IV <br>(12:40-1:30)</th>
+					<th>V <br>(1:30-2:20)</th>
+					<th>VI <br>(2:20-3:10)</th>
+					<th>VII <br>(3:10-4:00)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Monday</td>
+					<td>Eng</td>
+					<td>Mat</td>
+					<td>Che</td>
+					<td rowspan="6">Lunch</td>
+					<td colspan="3">LAb</td>
+					<td>play</td>
+
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td colspan="3">Lab</td>
+					<td>Eng</td>
+					<td>Che</td>
+					<td>Mat</td>
+					<td>Sports</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>Mat</td>
+					<td>Play</td>
+					<td>Eng</td>
+					<td>Che</td>
+					<td colspan="3">Library</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>Phy</td>
+					<td>Eng</td>
+					<td>Che</td>
+					<td colspan="3">Lab</td>
+					<td>Mat</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td colspan="3">Lab</td>
+					<td>Mat</td>
+					<td>che</td>
+					<td>Eng</td>
+					<td>Phy</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>Eng</td>
+					<td>Che</td>
+					<td>Mat</td>
+					<td colspan="3">Seminar</td>
+					<td>Sports</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+	<center>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTAg</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+</body>
+</html>

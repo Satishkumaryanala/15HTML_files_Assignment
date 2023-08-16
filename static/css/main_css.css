@@ -1,0 +1,60 @@
+.bg-green
+{
+    color: green!important;
+}
+.bg-image
+{
+    background: grey url('Bootstrap files/Images/spider\ image.jpg') no-repeat center scroll;
+    height: inherit;
+    width: inherit;
+    color: white;
+}
+.sidenav
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 40px;
+}
+.margin
+{
+    margin: 250px auto 30px 0px;
+
+}
+.sidemargin
+{
+    margin-left: 50px;
+}
+.imgsize
+{
+    height: 250px;
+    width: 150px;
+}
+.imageproperties
+{
+    width: inherit;
+    height: inherit;
+}
+.bg-image2
+{
+    background:rgba(28, 39, 42, 0.656) url('Bootstrap files/Images/dark.jpg') no-repeat center scroll;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    color: white;
+    /* background-size:unset; */
+}
+div:hover>.Zoomin
+{
+    transform: scale(1.1,1.1);
+}
+.Zoomin
+{
+    transition: all 200ms linear 0s;
+}
+.rad {
+    border-radius: 1rem !important;
+    overflow: hidden;
+}

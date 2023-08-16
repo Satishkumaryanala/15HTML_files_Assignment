@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Bootstrap files/Library files local/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Bootstrap files/Library files local/css/mdb.css">
+</head>
+<body>
+    <center>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-5  m-auto">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-center">
+                            <h2>Course fees calculator</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <table>
+                                    <tr>
+                                        <td><label for="cname"><h5>Select Course :</h5></label></td>
+                                        <td>
+                                            <select name="Coursename" id="cname">
+                                                <option value="none" selected disabled hidden>Select</option>
+                                                <option value="Python">Python</option>
+                                                <option value="Java">Java</option>
+                                                <option value="Mern">Mern</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="fees"><h5>Course fees :</h5></label></td>
+                                        <td><input type="text" id="fees" value="" readonly></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="caste"><h5>Select Caste :</h5></label></td>
+                                        <td>
+                                            <input type="radio" name="gender" id="caste" class="ml-2" value="OC" onclick="abc(1)">OC
+                                            <input type="radio" name="gender" id="caste" class="ml-3" value="BC" onclick="abc(2)">BC
+                                            <input type="radio" name="gender" id="caste" class="ml-3" value="SC" onclick="abc(3)">SC
+                                            <input type="radio" name="gender" id="caste" class="ml-3" value="ST" onclick="abc(4)">ST
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Compensation"><h5>Fees compensation :</h5></label></td>
+                                        <td><input type="text" id="Compensation" value="" readonly></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="paid_fee"><h5>Fees Paid :</h5></label></td>
+                                        <td><input type="text" id="paid_fee"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Due_fees"><h5>Due fees :</h5></label></td>
+                                        <td><input type="text" id="Due_fee"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center bg-secondary">
+                            <button class="btn btn-md btn-outline-black" id="Calc">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <center>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation2</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+
+    <!-- script code -->
+    <script>
+        let CName=document.querySelector('#cname')
+        let Cfee=document.querySelector('#fees')
+        let Caste=document.querySelector('#caste')
+        let Fcomp=document.querySelector('#Compensation')
+        let Fpaid=document.querySelector('#paid_fee')
+        let Fdue=document.querySelector('#Due_fee')
+        let BtnCalc=document.querySelector('#Calc')
+
+
+        // Course fees
+        CName.addEventListener('change',()=>
+        {
+            if (CName.value==='Java')
+            {
+                let fee=35000;
+                Cfee.value=fee;
+            }
+            else if(CName.value==='Python') 
+            {
+                let fee=36000;
+                Cfee.value=fee
+            }
+            else if(CName.value==='Mern')
+            {
+                let fee=35500
+                Cfee.value=fee
+            }
+        })
+
+        // Fees compansation based on caste
+        function abc(a)
+        {
+            if (a===1)
+            {
+                Fcomp.value=100
+            }
+            else if(a===2)
+            {
+                Fcomp.value=200
+            }
+            else if(a===3)
+            {
+                Fcomp.value=300
+            }
+            else if(a===4)
+            {
+                Fcomp.value=400
+            }
+        }
+
+        // Due fees balance
+        BtnCalc.addEventListener('click',()=>
+        {
+            let CoFees =Cfee.value; 
+            let comp =Fcomp.value;
+            let paid = Fpaid.value;
+            Fdue.value=(CoFees-comp-paid)
+        })   
+    </script>
+    
+    
+</body>
+</html>

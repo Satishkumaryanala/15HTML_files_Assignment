@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details from 2</title>
+</head>
+<body>
+    <center>
+        <form>
+            <table style="background-color: skyblue;">
+                <tr>
+                    <td><label><h4>FIRST NAME</h4></label></td>
+                    <td><input type="text" name="FIRST" maxlength="30">(Max 30 chararters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label><h4>LAST NAME</h4></label></td>
+                    <td><input type="text" name="LAST" maxlength="30">(Max 30 chararters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label><h4>DATE OF BIRTH</h4></label></td>
+                    <td>
+                        <select>
+                            <option value="Day">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select>
+                            <option value="Mon">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select>
+                            <option value="Year">Year</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>EMAIL ID</h4></label></td>
+                    <td>
+                        <input type="email" name="EMAIL"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>Mobile Number</h4></label></td>
+                    <td>
+                        <input type="text" name="Mobile" maxlength="10"/>(10 digit number)
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>GENDER</h4></label></td>
+                    <td>
+                        Male <input type="radio" name="Gender"/>
+                        Female <input type="radio" name="Gender"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>ADDRESS</h4></label></td></h4>
+                    <td>
+                        <textarea rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>CITY</h4></label></td>
+                    <td>
+                        <input type="text" name="CITY" maxlength="30">(Max 30 chararters a-z and A-Z)
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>PIN CODE</h4></label></td>
+                    <td>
+                        <input type="text" name="PIN CODE" maxlength="6"/>(6 digit number)
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>STATE</h4></label></td>
+                    <td>
+                        <input type="text" name="STATE" maxlength="30">(Max 30 chararters a-z and A-Z)
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>COUNTRY</h4></label></td>
+                    <td>
+                        <input type="text" name="COUNTRY" value="India"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><h4>HOBBIES</h4></label></td>
+                    <td>
+                        Drawing<input type="checkbox" value="Drawing"/>
+                        Singing<input type="checkbox" value="Singing"/>
+                        Dancing<input type="checkbox" value="Dancing"/>
+                        Skatting<input type="checkbox" value="Skatting"/><br>
+                        Others<input type="checkbox" value="Others"/>
+                        <input type="text"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    <center>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation2</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'metromonial' %}">Click here to go to Metromonial</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+</body>
+</html>

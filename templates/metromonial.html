@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metrimonial table</title>
+</head>
+<body>
+	<table border="2px" cellspacing="2px" cellpadding="20px" >
+		<thead>
+			<tr>
+				<th>S.no</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Salary</th>
+				<th>Images</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Sam</td>
+				<td>20</td>
+				<td>10000</td>
+				<td><img src="{% static 'images/ass-8.1.png' %}" width="150px" height="150px"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Allen</td>
+				<td>30</td>
+				<td>150000</td>
+				<td><img src="{% static 'images/ass-8.2.jpg' %}" width="150px" height="150px"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Maxi</td>
+				<td>25</td>
+				<td>150000</td>
+				<td><img src="{% static 'images/ass-8.3.jpg' %}" width="150px" height="150px"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>mark</td>
+				<td>20</td>
+				<td>150000</td>
+				<td><img src="{% static 'images/ass-8.4.png' %}" width="150px" height="150px"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Manny</td>
+				<td>23</td>
+				<td>150000</td>
+				<td><img src="{% static 'images/ass-8.5.png' %}" width="150px" height="150px"></td>
+			</tr>
+		</tbody>
+	</table>
+	<center>
+        <h3><a href="{% url 'Ass_animation1' %}">Click here to go to Animation1</a></h3>
+        <h3><a href="{% url 'Ass_animation2' %}">Click here to go to Animation2</a></h3>
+        <h3><a href="{% url 'Ass_table2' %}">Click here to go to Table 2</a></h3>
+        <h3><a href="{% url 'Ass_table3' %}">Click here to go to Table 3</a></h3>
+        <h3><a href="{% url 'Ass_table4' %}">Click here to go to Table 4</a></h3>
+        <h3><a href="{% url 'Ass_table5' %}">Click here to go to Table 5</a></h3>
+        <h3><a href="{% url 'Ass_table6' %}">Click here to go to Table 6</a></h3>
+        <h3><a href="{% url 'Combinator_selector' %}">Click here to go to Combinator selectors</a></h3>
+        <h3><a href="{% url 'Form_1' %}">Click here to go to Form 1</a></h3>
+        <h3><a href="{% url 'Form_2' %}">Click here to go to Form 2</a></h3>
+        <h3><a href="{% url 'fees_calculator' %}">Click here to go to Fees calculator</a></h3>
+        <h3><a href="{% url 'digital_watch' %}">Click here to go to Digital watch</a></h3>
+        <h3><a href="{% url 'Ass_divTag' %}">Click here to go to DivTags</a></h3>
+        <h3><a href="{% url 'Ass_transform' %}">Click here to go to Transform</a></h3>
+    </center>
+
+</body>
+</html>
